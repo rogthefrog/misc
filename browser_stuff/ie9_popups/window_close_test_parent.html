@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>lolwhut</title>
+    <script>
+      function open_test() {
+        var teh = window.open("window_close_test.html", "lolz");
+        if (!teh) {
+          alert('omg popup blocker');
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a href="#" onclick="open_test();return false">Open that pop-up</a>
+  </body>
+</html>

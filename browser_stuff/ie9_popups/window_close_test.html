@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>lolwhut</title>
+    <script type="text/javascript">
+      function my_close() {
+        var old = window.opener || null;
+        window.opener='x';
+        window.close();
+      }
+      function default_close() {
+        window.close();
+      }
+    </script>
+  </head>
+  <body>
+    <a href="javascript:default_close()">Normal close</a>
+    <br />
+    <a href="javascript:my_close()">Fancy close</a>
+    <script>setTimeout(my_close, 1000);</script>
+  </body>
+</html>
